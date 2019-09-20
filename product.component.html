@@ -1,0 +1,23 @@
+<p>product works!</p>
+<div style="background-color: palegreen;
+width:50%;
+height:40%;
+top:50%;
+left:20%;
+right:20%;
+position: absolute;">
+<h2>PRICE FORM</h2>
+PID:<input type="text"(input)="pid=$event.target.value" value={{pid}}>
+NAME:<input type="text"(input)="name=$event.target.value" value={{name}}>
+PRICE:<input type="text"(input)="price=$event.target.value" value={{price}}>
+
+<button (click)="save()">Save
+    
+</button>
+<ul *ngFor="let product of productlist">
+    <li>{{product.pid}}</li>
+    <li>{{product.name}}</li>
+    <li>{{product.price}}</li>
+</ul>
+
+</div>
